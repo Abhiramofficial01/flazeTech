@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ATM Interface</title>
+</head>
+<body>
+    <div class="container">
+        <div id="login" class="hidden">
+            <label for="userId">User ID:</label>
+            <input type="text" id="userId" placeholder="Enter User ID">
+
+            <label for="pin">PIN:</label>
+            <input type="password" id="pin" placeholder="Enter PIN">
+
+            <button onclick="login()">Login</button>
+        </div>
+
+        <div id="menu" class="hidden">
+            <h2>ATM Menu</h2>
+            <button onclick="showHistory()">Transactions History</button>
+            <button onclick="showWithdraw()">Withdraw</button>
+            <button onclick="showDeposit()">Deposit</button>
+            <button onclick="showTransfer()">Transfer</button>
+            <button onclick="quit()">Quit</button>
+        </div>
+
+        <div id="output" class="hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
